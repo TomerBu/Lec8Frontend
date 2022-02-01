@@ -3,7 +3,7 @@ import Input from '../Components/Input'
 import ButtonWithProgress from '../Components/ButtonWithProgress'
 import { useNavigate } from 'react-router-dom'
 //useState
-const LoginPage = () => {
+const LoginPage = (props) => {
     const [username, setUserName] = useState('')
     const [password, setPassword] = useState('')
     const [apiError, setApiError] = useState(undefined)

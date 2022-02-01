@@ -26,7 +26,7 @@ const UserSignUpPage = (props) => {
     const onChangePassword = (e) => {
         const merrors = { ...errors }
         delete merrors.password
-        setPassword(password)
+        setPassword(e.target.value)
         setErrors(merrors)
     }
 
